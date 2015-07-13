@@ -31,7 +31,6 @@ $possible_domains = array_unique( $possible_domains );
 
 $implode = array();
 foreach( $possible_domains as $key => $value ) {
-	$possible_domains[ $key ] = mysql_real_escape_string( $value );
 	$implode[] = '%s';
 }
 
