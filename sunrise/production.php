@@ -70,7 +70,6 @@ $possible_domains = array_unique( $possible_domains );
 $implode = array();
 foreach( $possible_domains as $key => $value ) {
 	$implode[] = '%s';
-	$possible_domains[ $key ] = mysql_real_escape_string( $value );
 }
 
 //Now we're going to get any websites that match these URLs.
